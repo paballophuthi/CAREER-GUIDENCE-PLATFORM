@@ -1,20 +1,28 @@
-﻿import React from 'react'
+﻿import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="container mt-4">
-      <div className="card">
-        <div className="card-header">
-          <h2>Navbar</h2>
-        </div>
-        <div className="card-body">
-          <p>This component is under development. It will be implemented as part of the Career Guidance Platform.</p>
-          <div className="alert alert-info">
-            <strong>Module:</strong> Navbar
+    <nav className="navbar navbar-expand-lg navbar-dark bg-gradient shadow">
+      <div className="container">
+        <a className="navbar-brand fw-bold" href="/">
+          🎓 Career Guidance Platform - Lesotho
+        </a>
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="navbar-nav ms-auto">
+            <a className="nav-link" href="/login">Login</a>
+            <a className="nav-link" href="/register">Register</a>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 

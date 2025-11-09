@@ -141,55 +141,60 @@
 }
 
 /* Form Styling */
-.form-control {
+.form-control, .form-select {
   background-color: var(--card-bg) !important;
   border: 1px solid #2A2D3A !important;
   color: var(--text-body) !important;
 }
 
-.form-control:focus {
+.form-control:focus, .form-select:focus {
   background-color: var(--card-bg) !important;
   border-color: var(--secondary) !important;
-  box-shadow: 0 0 0 0.2rem rgba(123, 108, 246, 0.25) !important;
   color: var(--text-body) !important;
-}
-
-.form-select {
-  background-color: var(--card-bg) !important;
-  border: 1px solid #2A2D3A !important;
-  color: var(--text-body) !important;
-}
-
-.form-select:focus {
-  background-color: var(--card-bg) !important;
-  border-color: var(--secondary) !important;
-  box-shadow: 0 0 0 0.2rem rgba(123, 108, 246, 0.25) !important;
-  color: var(--text-body) !important;
+  box-shadow: 0 0 0 0.2rem rgba(123, 108, 246, 0.25);
 }
 
 .form-label {
-  color: var(--text-heading) !important;
+  color: var(--text-body) !important;
   font-weight: 500;
+}
+
+/* Tab Styling */
+.nav-tabs.nav-dark {
+  border-bottom: 1px solid #2A2D3A;
+}
+
+.nav-tabs.nav-dark .nav-link {
+  color: var(--text-body);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.nav-tabs.nav-dark .nav-link:hover {
+  color: var(--secondary);
+  border-color: transparent;
+}
+
+.nav-tabs.nav-dark .nav-link.active {
+  color: var(--secondary);
+  background-color: transparent;
+  border-color: #2A2D3A #2A2D3A var(--background);
+  font-weight: 600;
 }
 
 /* Alert Styling */
 .alert {
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
 }
 
-.alert-success {
-  background-color: rgba(40, 167, 69, 0.1);
-  color: #28a745;
+.alert-info {
+  background-color: rgba(123, 108, 246, 0.1);
+  color: var(--text-body);
 }
 
 .alert-danger {
   background-color: rgba(220, 53, 69, 0.1);
-  color: #dc3545;
-}
-
-/* Card Header Gradient */
-.card-header.bg-gradient {
-  background: linear-gradient(135deg, var(--primary), var(--secondary)) !important;
-  border-bottom: none;
+  color: #f8d7da;
 }

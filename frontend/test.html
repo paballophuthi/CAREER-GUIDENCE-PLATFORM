@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Test - Career Guidance</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif;
+            background: #181A20;
+            color: white;
+        }
+        #root { padding: 20px; }
+        .test-message { 
+            background: #4CAF50; 
+            padding: 20px; 
+            border-radius: 10px; 
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="test-message">
+            <h1>HTML is Loading...</h1>
+            <p>If you see this, React has not mounted yet.</p>
+            <p>Check the browser console for React logs.</p>
+        </div>
+    </div>
+    
+    <script>
+        console.log("📄 HTML loaded successfully");
+        console.log("🔍 Root element:", document.getElementById('root'));
+    </script>
+    
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
